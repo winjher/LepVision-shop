@@ -304,7 +304,7 @@ const canBuy = () => me && ['buyer','purchaser','breeder'].includes(role());
 const bFarm = () => isOwner() ? (mine().farm || '') : UI.bFarm;
 
 function navFor(){
-  if (!me) return ['home','more'];
+  if (!me) return ['home','market','more'];
   switch (role()) {
     case 'farmowner': return ['home','bookings','more'];
     case 'admin': return ['home','market','bookings','more'];
